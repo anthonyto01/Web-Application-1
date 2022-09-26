@@ -1,0 +1,137 @@
+/* CSS for Navigation Bar */
+/* Adds colour to the current active link */
+.navflex li.active {
+    background-color: #a6a6a6;
+}
+
+/* Creates a flex box encasing all the elements within */
+.navflex ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navflex {
+    background-color:  #ffdd79;
+    width: 100%;
+}
+
+.navflex li:hover{
+    background-color: #fff0a3;
+}
+
+.navflex li{
+    flex:4;
+    text-align: center;
+}
+
+.navflex a{
+    font-size: 2em;
+    font-family: fantasy;
+    text-decoration: none;
+    padding: 0.8em 0.5em;
+    display: inline-block;
+    color: #333333;
+}
+
+#H1 {
+    text-align: center;
+    font-family: 'Segoe UI', 'Open Sans';
+
+}
+/* Query which is applied for users with a screen smaller than 480px */
+@media screen and (max-width:480px)
+    {
+    .navflex ul {
+        flex-direction: column;
+        }
+        .navflex li {
+        text-align: left;
+        }
+    }        
+    header {
+        background-color: #ffd866;
+        padding: 15px;
+    }
+   
+    body {
+       text-align: center;
+       background-color: lightyellow;
+    }    
+
+    main {
+       height: 450px;
+       background-color: whitesmoke;
+    }
+
+    footer {
+       background-color: #dfe3ee;
+       padding: 15px;
+    }
+
+    h2 {
+        font-family: sans-serif;
+    }
+    
+/*CSS for Calculator*/  
+#paycontainer{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px grey;
+}
+
+#payrate, 
+#hours{
+    color: #222f3e;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid;
+    width: 200px;
+}
+
+#payrate:focus,
+#hours:focus{
+    border-bottom: 2px solid;
+    width: 300px;
+    transition: 0.5s;
+}
+
+#calculate{
+    margin-top: 20px;
+    border: none;
+    color: #fff;
+    background-color: lightgreen;
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+#calculate:hover{
+    box-shadow: 1px 1px 10px #1f9747;
+    background-color: #c0e8bd;
+}
+
+#result,
+#result1,
+#result2{
+    font-family: sans-serif;
+}
+
+input[type="payrate"], input[type="hours"], label, select{
+    font-family: sans-serif;
+}

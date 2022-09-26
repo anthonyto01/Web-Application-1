@@ -1,0 +1,138 @@
+/* CSS for Navigation Bar */
+/* Adds colour to the current active link */
+.navflex li.active {
+    background-color: #a6a6a6;
+}
+
+/* Creates a flex box encasing all the elements within */
+.navflex ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navflex {
+    background-color:  #ffdd79;
+    width: 100%;
+}
+
+.navflex li:hover{
+    background-color: #fff0a3;
+}
+
+.navflex li{
+    flex:4;
+    text-align: center;
+}
+
+.navflex a{
+    font-size: 2em;
+    font-family: fantasy;
+    text-decoration: none;
+    padding: 0.8em 0.5em;
+    display: inline-block;
+    color:#333333;
+}
+
+/* Query which is applied for users with a screen smaller than 480px */
+@media screen and (max-width:480px)
+    {
+    .navflex ul {
+        flex-direction: column;
+        }
+        .navflex li {
+        text-align: left;
+        }
+    }        
+
+    #H1 {
+        text-align: center;
+        font-family: 'Segoe UI', 'Open Sans';
+    
+    }
+    header {
+        background-color: #ffd866;
+        padding: 15px;
+    }
+   
+/* Main Content */
+body {
+    background-color: white;
+}
+
+/* Posts with different bakcground color depending if they are even or odd */
+#joblist>div.job:nth-child(odd) {
+    background-color: #fff1c7;
+}
+
+#joblist>div.job:nth-child(even) {
+    background-color:#ffdf81;
+}
+
+div.job{
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-bottom: 0.2em;
+    border: solid;
+}
+
+span.job_header {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button.show_details {
+    margin-left: 1em;
+    font-size: 1.25em;
+    cursor: pointer;
+    background-color: lightgreen;
+    text-align: center;
+    font-weight: lighter;
+    border: solid;
+    color: black;
+    float: right;
+    border-radius: 5px;
+}
+
+button.show_details:active {
+    background-color: rgb(40, 185, 40);
+}
+
+
+hr.job_line {
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
+    border: 0;
+    border-top: 1px solid;
+}
+
+p.job_content {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+hr.job_line {
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
+    border: 0;
+    border-top: 1px solid black;
+}
+
+span.user_id {
+    display: none;
+}
+
+div.user_details {
+    display: none;
+}
+
+h2{
+    text-align: center;
+}
+
