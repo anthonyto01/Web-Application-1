@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Web Application</title>
+    <link rel="stylesheet" href="css/jobinfo.css">
+    <!--jQuery-->
+    <script defer src="javascript/jobinfo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<body>
+<!-- Main Title of Webpage and Navigation Bar-->
+<header>
+    <h1 id="H1">Web Application</h1>
+    <nav class="navflex">
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="pay.html">Pay Calculator</a></li>
+            <li class="active"><a href="jobinfo.html">Job Information</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+    <section id="joblist">
+        <form id="inputform">
+        <label for='job_name'>Enter Job Title</label><br>
+        <input id='job_name' type='text'>
+            <input type="submit" value='Search'>
+            </form>
+        <h2>Job Information</h2>
+    </section>
+
+
+
+    <!-- basic post structure -->
+    <template>
+        <div class="job">
+            <span class="job_header"></span>
+            <button class="show_details">Details &#9660;</button>
+            <hr class="job_line" />
+            <div class="user_details target updown">
+                Year: <span class="year"></span><br />
+                Estimated Pay: <span class="estpay"></span>
+                <hr class="job_line" />
+            </div>
+            <p class="job_content"></p>
+            <span class="user_id"></span>
+        </div>
+    </template>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <title>Web Application</title>
+    <link rel="stylesheet" href="css/pay.css">
+    <script src="javascript/pay.js"></script>
+<body>
+<!-- Main Title of Webpage and Navigation Bar-->
+<header>
+    <h1 id="H1">Web Application</h1>
+    <nav class="navflex">
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li class="active"><a href="pay.html">Pay Calculator</a></li>
+            <li><a href="jobinfo.html">Job Information</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+<!-- Pay Calculator-->
+<h2> Online Wages Calculator</h2>
+    <main>
+    <form id="payCalculatorForm" method="GET" action="#">
+        <div id="paycontainer">
+        <fieldset>
+            <select name="test" id="myTime">
+                <option value="one">Hourly</option>
+                <option value="two">Weekly</option>
+                <option value="three">Monthly</option>
+                <option value="four">Yearly</option>
+            </select>    
+                <input type="text" id="payrate">
+                <p>
+                <label for="hours">Hours Worked per Week</label>
+                <input type="text" id="hours">
+                </p>
+                <input type="submit" id="calculate" onclick="wagesCalculate()" name="Calculate">
+            
+                <p id="result"></p>
+                <p id="result1"></p>
+                <p id="result2"></p>
+        </fieldset> 
+        </div>
+    </form>
+</main>
+<footer>
+    <hr>
+    <span id="copyright">© Copyright Job Information Career.</span> <b>Telephone:</b> +44 (0)141 123 456.
+    <a href="mailto:jobinformation@career.com"><b>Email: </b>jobinformation@career.com</a>
+</footer>
+</body>
+<!-- Linking to an external javascript file for the pay calculator-->
+
+</html>
